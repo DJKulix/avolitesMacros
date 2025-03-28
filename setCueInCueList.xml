@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sets cue in cue list according to pressed button on launchpad and fires it at 100% -->
+<avolites.macros>
+<macro id="UserMacro.Cue1_1" name = "CueList 1.1_v2">
+    <sequence>
+      <step>Playbacks.SetPlaybackLevel("Location=Playbacks,1,1", level:1)</step>
+      <step>CueLists.SetNextCue(userNumber:2, 1.0)</step>
+      <step>CueLists.Play(userNumber:2)</step>
+    </sequence>
+  </macro>
+
+  <macro id="UserMacro.Cue1_2" name = "CueList 1.2">
+    <sequence>
+      <step>Playbacks.SetPlaybackLevel("Location=Playbacks,1,1", level:1)</step>
+      <step>CueLists.SetNextCue(userNumber:2, 2.0)</step>
+      <step>CueLists.Play(userNumber:2)</step>
+    </sequence>
+  </macro>
+
+  <macro id="UserMacro.Cue1_3" name = "CueList 1.3">
+    <sequence>
+      <step>Playbacks.SetPlaybackLevel("Location=Playbacks,1,1", level:1)</step>
+      <step>CueLists.SetNextCue(userNumber:2, 2.5)</step>
+      <step>CueLists.Play(userNumber:2)</step>
+    </sequence>
+  </macro>
+
+  <macro id="UserMacro.Cue1_3" name = "CueList 1.3">
+    <sequence>
+      <step>Playbacks.SetPlaybackLevel("Location=Playbacks,1,1", level:1)</step>
+      <step>CueLists.SetNextCue(userNumber:2, 3.0)</step>
+      <step>CueLists.Play(userNumber:2)</step>
+    </sequence>
+  </macro>
+  
+  <macro id="UserMacro.Cue1_4" name = "CueList 1.4">
+    <sequence>
+      <step>Playbacks.SetPlaybackLevel("Location=Playbacks,1,1", level:1)</step>
+      <step>CueLists.SetNextCue(userNumber:2, 4.0)</step>
+      <step>CueLists.Play(userNumber:2)</step>
+    </sequence>
+  </macro>
+</avolites.macros>
