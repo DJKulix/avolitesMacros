@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<avolites.macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Avolites.Menus.xsd">
+<!--  Macros that increment/decrement various attributes on wheels, used to contrl wheels by MIDI controllers -->
+
+<!--
+    Void Group.Editor.IncrementWheelParameter(
+    value ( Single ) : The value to increment the dimmer by.
+    timeDelta ( Double ) : The time difference from the last time the dimmer was incremented by the calling         object.
+    shiftEnabled ( Boolean ) : Whether to accelerate the increment.
+-->
+<macro id = "Programmer.Wheel.Intensity.Increment" name = "Programmer Wheel Intesity Increment">
+<description> Increments Intesity Wheel  </description>
+    <sequence>
+
+        <step>
+          Programmer.Editor.Fixtures.IncrementDimmer(Math.Cast.ToSingle(1), 1.0,  true)
+        </step>
+    </sequence>
+</macro>
+
+<macro id = "Programmer.Wheel.Intensity.Decrement" name = "Programmer Wheel Intesity Decrement">
+    <description> Decrements Intesity Wheel  </description>
+    <sequence>
+
+        <step>
+            Programmer.Editor.Fixtures.IncrementDimmer(Math.Cast.ToSingle(-1), 1.0,  true)
+        </step>
+    </sequence>
+</macro>
+
+
+<!--
+    Void Group.Editor.IncrementWheelParameter(
+    controlId ( Int32 ) : The control identifier.
+    value ( Single ) : The value to increment the dimmer by.
+    timeDelta ( Double ) : The time difference from the last time the dimmer was incremented by the calling object.
+    shiftEnabled ( Boolean ) : Whether to accelerate the increment.
+-->
+<macro id = "Programmer.Wheel.Reed.Increment" name = "Programmer Wheel Red Increment">
+    <description> Increments Intesity Wheel  </description>
+    <sequence>
+        <step>
+            Programmer.Editor.Fixtures.IncrementAttribute(Programmer.Editor.Fixtures.GetControlIdFromName("Red"), Math.Cast.ToSingle(1), 1.0,  true)
+        </step>
+    </sequence>
+</macro>
+
+<macro id = "Programmer.Wheel.Green.Increment" name = "Programmer Wheel Green Increment">
+    <description> Increments Intensity Wheel </description>
+    <sequence>
+        <step>
+            Programmer.Editor.Fixtures.IncrementAttribute(Programmer.Editor.Fixtures.GetControlIdFromName("Green"), Math.Cast.ToSingle(1), 1.0,  true)
+        </step>
+    </sequence>
+</macro>
+
+<macro id = "Programmer.Wheel.Blue.Increment" name = "Programmer Wheel Blue Increment">
+    <description> Increments Intensity Wheel </description>
+    <sequence>
+        <step>
+            Programmer.Editor.Fixtures.IncrementAttribute(Programmer.Editor.Fixtures.GetControlIdFromName("Blue"), Math.Cast.ToSingle(1), 1.0,  true)
+        </step>
+    </sequence>
+</macro>
+
+<macro id = "Programmer.Wheel.White.Increment" name = "Programmer Wheel White Increment">
+    <description> Increments Intensity Wheel </description>
+    <sequence>
+        <step>
+            Programmer.Editor.Fixtures.IncrementAttribute(Programmer.Editor.Fixtures.GetControlIdFromName("White"), Math.Cast.ToSingle(1), 1.0,  true)
+        </step>
+    </sequence>
+</macro>
+
+<macro id = "Programmer.Wheel.Red.Decrement" name = "Programmer Wheel Red Decrement">
+    <description> Decrements Intensity Wheel </description>
+    <sequence>
+        <step>
+            Programmer.Editor.Fixtures.IncrementAttribute(Programmer.Editor.Fixtures.GetControlIdFromName("Red"), Math.Cast.ToSingle(-1), 1.0,  true)
+        </step>
+    </sequence>
+</macro>
+
+<macro id = "Programmer.Wheel.Green.Decrement" name = "Programmer Wheel Green Decrement">
+    <description> Decrements Intensity Wheel </description>
+    <sequence>
+        <step>
+            Programmer.Editor.Fixtures.IncrementAttribute(Programmer.Editor.Fixtures.GetControlIdFromName("Green"), Math.Cast.ToSingle(-1), 1.0,  true)
+        </step>
+    </sequence>
+</macro>
+
+<macro id = "Programmer.Wheel.Blue.Decrement" name = "Programmer Wheel Blue Decrement">
+    <description> Decrements Intensity Wheel </description>
+    <sequence>
+        <step>
+            Programmer.Editor.Fixtures.IncrementAttribute(Programmer.Editor.Fixtures.GetControlIdFromName("Blue"), Math.Cast.ToSingle(-1), 1.0,  true)
+        </step>
+    </sequence>
+</macro>
+
+<macro id = "Programmer.Wheel.White.Decrement" name = "Programmer Wheel White Decrement">
+    <description> Decrements Intensity Wheel </description>
+    <sequence>
+        <step>
+            Programmer.Editor.Fixtures.IncrementAttribute(Programmer.Editor.Fixtures.GetControlIdFromName("White"), Math.Cast.ToSingle(-1), 1.0,  true)
+        </step>
+    </sequence>
+</macro>
+
+
+
+</avolites.macros>
