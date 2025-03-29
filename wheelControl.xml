@@ -109,5 +109,60 @@
 </macro>
 
 
+<macro id = "Programmer.Wheel.1.Increment" name = "Programmer Wheel 1 Increment">
+    <description> Decrements Intesity Wheel  </description>
+    <sequence>
+        <step>
+            Programmer.Editor.Fixtures.IncrementAttributeFunction(0, Math.Cast.ToSingle(1), 1.0)
+        </step>
+    </sequence>
+</macro>
+
+<macro id = "Programmer.Wheel.2.Increment" name = "Programmer Wheel 2 Increment">
+    <description> Decrements Intesity Wheel  </description>
+    <sequence>
+        <step>
+            Programmer.Editor.Fixtures.IncrementAttributeFunction(1, Math.Cast.ToSingle(1), 1.0)
+        </step>
+    </sequence>
+</macro>
+
+<!--     Change wheel value depending on their ID, no needt to call for attribut name -->
+<macro id = "Programmer.Wheel.3.Increment" name = "Programmer Wheel 3 Increment">
+    <description> Decrements Intesity Wheel  </description>
+    <sequence>
+        <step>
+            Programmer.Editor.Fixtures.IncrementAttributeFunction(2, Math.Cast.ToSingle(1), 1.0)
+        </step>
+    </sequence>
+</macro>
+
+<macro id = "Programmer.Wheel.1.Decrement" name = "Programmer Wheel 1 Decrement">
+    <description> Decrements Intensity Wheel </description>
+    <sequence>
+        <step>
+            Programmer.Editor.Fixtures.IncrementAttributeFunction(0, Math.Cast.ToSingle(-1), 1.0)
+        </step>
+    </sequence>
+</macro>
+
+<macro id = "Programmer.Wheel.2.Decrement" name = "Programmer Wheel 2 Decrement">
+    <description> Decrements Intensity Wheel </description>
+    <sequence>
+        <step>
+            Programmer.Editor.Fixtures.IncrementAttributeFunction(1, Math.Cast.ToSingle(-1), 1.0)
+        </step>
+    </sequence>
+</macro>
+
+<macro id = "Programmer.Wheel.3.Decrement" name = "Programmer Wheel 3 Decrement">
+    <description> Decrements Intensity Wheel </description>
+    <sequence>
+        <step>
+            Programmer.Editor.Fixtures.IncrementAttributeFunction(2, Math.Cast.ToSingle(-1), 1.0)
+        </step>
+    </sequence>
+</macro>
+
 
 </avolites.macros>
